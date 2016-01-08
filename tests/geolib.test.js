@@ -330,6 +330,18 @@
 
     });
 
+    test("Testing: getCircleIntersection()", function() {
+
+        expect(4);
+        var intersectionPoints = geolib.getCircleIntersection([{latitude: 52.518611, longitude: 13.408056, range: 1000000}, {latitude: 51.5309082, longitude: 0.141458, range: 1000000}]);
+        
+        equal(intersectionPionts[0].latitude, 60.135204, 'Latitude 0 should be around 60.135204');
+        equal(intersectionPionts[0].longtitude, 4.768020, 'Longtitude 0 should be around 4.768020');
+        equal(intersectionPionts[1].latitude, 44.265387, 'Latitude 1 should be around 44.265387');
+        equal(intersectionPionts[1].longtitude, 8.045620, 'Longtitude 1 should be around 8.045620');
+
+    });
+
 
     test("Testing: findNearest()", function() {
 
